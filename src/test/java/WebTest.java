@@ -35,6 +35,7 @@ public class WebTest {
 
         WebElement h2 = driver.findElement(By.xpath("//body/div[@id='wrap']/div[@id='main']/h2"));
         String actualResult = h2.getText();
+        //sleep(2000);
 
         Assert.assertEquals(actualResult, expectedResult);
 
